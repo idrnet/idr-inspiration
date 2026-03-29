@@ -13,7 +13,7 @@
 
 <body>
 
-    <img src="https://cdn.atakdomain.com/styles/images/blank.gif" class="bg-img" alt="arkaplan resmi">
+    <img src="assets/img/bg-1.jpg" class="bg-img" alt="arkaplan resmi">
     <div class="wrapper">
         <div class="container">
             <div class="head">
@@ -67,17 +67,9 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var imgCount = 9;
-            var id = Math.floor(Math.random() * imgCount) + 1;
-            var background = "assets/img/bg-" + id + ".jpg";
-
             var bgImg = document.querySelector(".bg-img");
-            bgImg.style.opacity = "0";
-            bgImg.src = background;
-            bgImg.onload = function () {
-                bgImg.style.transition = "opacity 0.5s";
-                bgImg.style.opacity = "0.3";
-            };
+            bgImg.style.transition = "opacity 0.5s";
+            bgImg.style.opacity = "0.3";
         });
     </script>
 
